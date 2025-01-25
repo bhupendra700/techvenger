@@ -1,0 +1,199 @@
+.infoSec {
+    height: 100dvh;
+    width: 100dvw;
+    padding: 25px;
+    background-color: #fff;
+    background: linear-gradient(#ddd, #7c68ee);
+
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.add-form {
+    width: 280px;
+    margin: auto;
+    padding: 8px;
+    background-color: #fff;
+    // box-shadow: 0px 0px 10px 2px #ddd;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.add-form .add-user-img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.add-form .add-user-img{
+    overflow: none;
+    border: 2px solid #ddd;
+}
+
+.add-form .add-user-img #myImg{
+    display: none;
+}
+
+.add-form .add-user-img img {
+    width: 100%;
+    // border: 2px solid #ddd;
+}
+
+/* input label */
+.add-form .add-container {
+    margin-top: 15px;
+    position: relative;
+}
+
+.add-container .add-input {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.add-container .add-input:focus, .add-input:not(:placeholder-shown) {
+    border-color: #2979ff;
+}
+
+.add-container .input-label {
+    position: absolute;
+    padding: 0 2px;
+    top: 18px;
+    left: 10px;
+    font-size: 12px;
+    color: #ddd;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-container .add-input:focus~.input-label, .add-form .add-input:not(:placeholder-shown)~.input-label {
+    background-color: #fff;
+    font-size: 10px;
+    color: #2979ff;
+    top: -5px;
+    left: 15px;
+}
+
+/* contact validation */
+.contact-validate {
+    padding: 0 5px;
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+
+#contact-input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+#contact-input:not(:placeholder-shown):invalid~.input-label {
+    color: red;
+}
+
+#contact-input:not(:placeholder-shown):invalid~.contact-validate {
+    display: block;
+}
+
+/*standard -input*/
+
+.occ-container{
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+.occ-container label{
+    background-color: #fff;
+    padding: 0 5px;
+    position: absolute;
+    font-size: 10px;
+    top: -7px;
+    left: 7px;
+    color: grey;
+}
+
+.occ-container #occ-input{
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    outline: none;
+    border: 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+}
+
+.occ-container #occ-input:focus{
+    border-color: #2962ff;
+}
+
+.occ-container #occ-input:focus ~ label{
+    color: #2962ff;
+}
+
+/* student address */
+.add-address .input-label {
+    background: linear-gradient(#fff 70%, #ffffff00 40%) !important;
+    position: absolute;
+    padding: 0 5px;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #d3d3d3;
+    transition: all 0.2s ease-in-out;
+}
+
+#address-input {
+    resize: none;
+}
+
+#address-input::-webkit-scrollbar {
+    display: none;
+}
+
+/* buttons */
+.add-form .add-btn-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.add-btn-container .cancel-btn, .submit-btn {
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-btn-container .cancel-btn:active, .update-btn:active, .submit-btn:active {
+    animation: buttonClick 0.4s ease-in-out 1;
+}
+
+.add-btn-container .cancel-btn {
+    background-color: #f4511e;
+}
+
+.add-btn-container .update-btn, .submit-btn {
+    background-color: #2979ff;
+}
+
+.add-btn-container .update-btn:hover, .submit-btn:hover {
+    background-color: #2962ff;
+}
+
+/* justing testing */

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../CSS/Auth.css";
+import { Link } from "react-router-dom";
 import {
   logingreetBox,
   loginform,
@@ -98,7 +99,8 @@ const Auth = () => {
                 Forgot Password?
               </a>
               <button type="submit" className="login-submit-btn">
-                Login
+                
+                <Link to="/info">Login</Link>
               </button>
               <div className="mtd">
                 <div className="or">
